@@ -238,8 +238,8 @@ function filtroOferta(){
                 <h3>
                     Precio:$${filtro[i].precio}
                 </h3>
-                <h3> 
-                Precio con descuento del 10%:$${filtro[i].precio-filtro[i].precio*10/100}
+                <h3 class="oferta"> 
+                Precio con descuento del 10% pagando con visa:$${filtro[i].precio-filtro[i].precio*10/100}
                 </h3>
                                 
             `
