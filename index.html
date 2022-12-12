@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        Bienvenido a musica.com
+    </header>
+
+    <div>
+        <h2>Utiliza nuestros filtros para encontrar lo que buscas</h2>
+        <div class="filtros"><button onclick="cardsAHtml(artistas)">Mira todo nuestro listado</button></div>
+        <div class="filtros">
+            <select id="artistaSelect">
+                <option value="Imagine Dragons">Imagine Dragons</option>
+                <option value="One Republic">One Republic</option>
+                <option value="Vigiland">Vigiland</option>
+                <option value="Billie Ellish">Billie Ellish</option>
+                <option value="Coldplay">Coldplay</option>
+                <option value="AJR">AJR</option>
+                <option value="Walk The Moon">Walk the moon</option>
+                <option value="Panic At the Disco">Panic At the Disco</option>
+            </select>
+    
+            <button onclick="seleccionArtista()">Filtra por artista</button>
+        </div>
+        <div class="filtros">
+            <select id="ordenAlfabetico">
+                <option value=1>A-Z</option>
+                <option value=0>Z-A</option>
+                
+                
+            </select>
+            <button onclick="ordenar()">Ordena el catalogo de la A-Z o de la Z-A</button>
+        </div>
+        <div class="filtros">
+            <button onclick="filtroOferta()">Filtra nuestras ofertas</button>
+        </div>
+    </div>
+    <div class="contenedor">
+
+    </div>
+    <script src="./canciones.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
