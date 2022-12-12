@@ -132,13 +132,13 @@ const artistas= [{
 {
     "id":10,
     "artista":"One Republic",
-    "img":"./assets/Rescue_me.jfif",
+    "img":"./assets/rescue_me.jfif",
     "genero":[
         "rock",
         "pop"
     ],
     "album":"Human",
-    "cancion":"Rescue Me",
+    "cancion":"rescue Me",
     "fecha":"mayo 2019",
     "precio":25000,
     "oferta":false
