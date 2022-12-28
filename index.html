@@ -1,51 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./styles.css">
     <title>Document</title>
 </head>
+
 <body>
-    <header>
-        Bienvenido a musica.com
+    <header id="Encabezado">
+        <div id="logoContainer"><img src="./assets/logoF.png" alt="logo"></div>
+        <div id="enc"> BIENVENIDO A TU MUSICA.COM</div>
+        <div id="modoOscuro">
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                <label class="form-check-label" for="flexSwitchCheckDefault">Modo Oscuro</label>
+            </div>
+        </div>
     </header>
 
-    <div>
-        <h2>Utiliza nuestros filtros para encontrar lo que buscas</h2>
-        <div class="filtros"><button onclick="cardsAHtml(artistas)">Mira todo nuestro listado</button></div>
-        <div class="filtros">
-            <select id="artistaSelect">
-                <option value="Imagine Dragons">Imagine Dragons</option>
-                <option value="One Republic">One Republic</option>
-                <option value="Vigiland">Vigiland</option>
-                <option value="Billie Ellish">Billie Ellish</option>
-                <option value="Coldplay">Coldplay</option>
-                <option value="AJR">AJR</option>
-                <option value="Walk The Moon">Walk the moon</option>
-                <option value="Panic At the Disco">Panic At the Disco</option>
-            </select>
-    
-            <button onclick="seleccionArtista()">Filtra por artista</button>
-        </div>
-        <div class="filtros">
-            <select id="ordenAlfabetico">
-                <option value=1>A-Z</option>
-                <option value=0>Z-A</option>
-                
-                
-            </select>
-            <button onclick="ordenar()">Ordena el catalogo de la A-Z o de la Z-A</button>
-        </div>
-        <div class="filtros">
-            <button onclick="filtroOferta()">Filtra nuestras ofertas</button>
+    <div id="container">
+        <h3>Utiliza nuestros filtros para encontrar lo que buscas</h3>
+        <div id="filtros-container">
+            
+            <div class="filtros"><button onclick="cardsAHtml(artistas)">Mira todo nuestro listado</button></div>
+            <div class="filtros">
+                <select id="artistaSelect">
+                    <option value="Imagine Dragons">Imagine Dragons</option>
+                    <option value="One Republic">One Republic</option>
+                    <option value="Vigiland">Vigiland</option>
+                    <option value="Billie Ellish">Billie Ellish</option>
+                    <option value="Coldplay">Coldplay</option>
+                    <option value="AJR">AJR</option>
+                    <option value="Walk The Moon">Walk the moon</option>
+                    <option value="Panic At the Disco">Panic At the Disco</option>
+                </select>
+
+                <button onclick="seleccionArtista()">Filtra por artista</button>
+            </div>
+            <div class="filtros">
+                <select id="ordenAlfabetico">
+                    <option value=1>A-Z</option>
+                    <option value=0>Z-A</option>
+
+
+                </select>
+                <button onclick="ordenar()">Ordena el catalogo de la A-Z o de la Z-A</button>
+            </div>
+            <div class="filtros">
+                <button onclick="filtroOferta()">Mira nuestras ofertas</button>
+            </div>
         </div>
     </div>
     <div class="contenedor">
 
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./canciones.js"></script>
     <script src="./index.js"></script>
 </body>
+
 </html>

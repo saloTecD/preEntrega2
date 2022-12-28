@@ -226,9 +226,9 @@ function filtroOferta(){
                 <h3>
                     Genero:${filtro[i].genero}
                 </h3>
-                <h3>
+                <p>
                     Album:${filtro[i].album}
-                </h3> 
+                </p> 
                 <h3>
                     Cancion:${filtro[i].cancion}
                 </h3> 
