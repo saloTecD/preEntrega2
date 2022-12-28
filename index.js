@@ -47,6 +47,7 @@ function cardsAHtml (array){
             
             const card=document.createElement("div")
             card.className="card"
+            card.setAttribute(`id`,`${array[i].id}`)
             card.innerHTML=`
                 <div class="container-img">
                     <img src=${array[i].img} alt=${array[i].name}
@@ -96,6 +97,7 @@ function filtroArtista(seleccion){
             
             const card=document.createElement("div")
             card.className="card"
+            card.setAttribute(`id`,`${filtro[i].id}`)
             card.innerHTML=`
                 <div class="container-img">
                     <img src=${filtro[i].img} alt=${filtro[i].name}
@@ -161,6 +163,7 @@ function sortArtistaA(seleccion){
             
             const card=document.createElement("div")
             card.className="card"
+            card.setAttribute(`id`,`${artistasOrdenados[i].id}`)
             card.innerHTML=`
                 <div class="container-img">
                     <img src=${artistasOrdenados[i].img} alt=${artistasOrdenados[i].name}
@@ -212,6 +215,7 @@ function sortArtistaZ(seleccion){
             
         const card=document.createElement("div")
         card.className="card"
+        card.setAttribute(`id`,`${artistasOrdenados[i].id}`)
         card.innerHTML=`
             <div class="container-img">
                 <img src=${artistasOrdenados[i].img} alt=${artistasOrdenados[i].name}
@@ -256,6 +260,7 @@ function filtroOferta(){
             
             const card=document.createElement("div")
             card.className="card"
+            card.setAttribute(`id`,`${filtro[i].id}`)
             card.innerHTML=`
                 <div class="container-img">
                     <img src=${filtro[i].img} alt=${filtro[i].name}
