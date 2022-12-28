@@ -1,3 +1,43 @@
+const bottonModoOscuro =document.querySelector("#flexSwitchCheckDefault")
+const body=document.querySelector(".modoClaro")
+const encabezado=document.querySelector("#Encabezado")
+const divModoOscuro =document.querySelector(".selectorModo")
+
+//verificar modo oscuro
+const mo=localStorage.getItem("modoOscuro")
+if(mo==="si"){
+    oscuro()
+}
+
+
+// Configuracion modo oscuro y local storage
+
+
+
+bottonModoOscuro.onclick=()=>{
+    if(localStorage.getItem("modoOscuro")==="si"){
+        localStorage.setItem("modoOscuro","no")
+        body.classList.toggle("modoOscuro")
+        encabezado.classList.toggle("modoOscuro")
+        divModoOscuro.classList.toggle("modoOscuro")
+        
+    }
+    else{
+    localStorage.setItem("modoOscuro","si")
+    body.classList.toggle("modoOscuro")
+    encabezado.classList.toggle("modoOscuro")
+    divModoOscuro.classList.toggle("modoOscuro")}
+    
+}
+function oscuro(){
+    body.classList.toggle("modoOscuro")
+    encabezado.classList.toggle("modoOscuro")
+    divModoOscuro.classList.toggle("modoOscuro")
+    document.getElementById("flexSwitchCheckDefault").checked=true
+}
+
+
+// Funciones de arrays, filtros y visualizacion de la informacion de las canciones
 function cardsAHtml (array){
 
         const contenedor=document.querySelector(".contenedor")
